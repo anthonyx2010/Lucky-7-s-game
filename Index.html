@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Anthony Xayakham -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome To The Lucky 7's</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lucky 7's</h1>
+    <label for="bet">Starting Cash:
+      <input type="text" id="bet" placeholder="$1 to $100">
+    </label>
+    <span id="hint">Press Enter or Click Play</span>
+    <p><button id="play">Play</button></p>
+    <noscript>
+      For full functionality of this site it is necessary to enable JavaScript.
+      Here are the <a href="http://www.enable-javascript.com/" target="_blank">
+      instructions how to enable JavaScript in your web browser</a>.
+    </noscript>
+  </div>
+
+  <div id="output" class="container hidden hasLabel">
+    <div class="label">Game Log</div>
+  </div>
+
+  <div id="rules" class="container hasLabel">
+    <div class="label">Rules</div>
+    <p>Each round the game rolls two <img src="dice.svg" alt="Dice" height="30px" width="30px"> for you repeatedly, and for each roll you must bet at least&nbsp;$1.</p>
+    <p>If the two <img src="dice.svg" alt="Dice" height="30px" width="30px"> add up to <ins>7</ins>, <span class="win">you will win $4.</span></p>
+    <p>Otherwise, <span class="lose">you will lose $1.</span></p>
+    <p>Place your starting wager and see how many rolls it takes for you to win!</p>
+  </div>
+
+  <div id="results" class="container hidden hasLabel">
+    <div class="label">Results</div>
+    <table>
+      <tr>
+        <th>Starting Bet</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Highest Amount Won</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Roll Count at Highest Amount Won</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Total Rolls Before Going Broke</th>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <p id="rulesBtn"  class="hidden"><button>Show Rules</button></p>
+  <p id="resultsBtn" class="hidden"><button>Show Results</button></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
